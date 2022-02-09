@@ -1,0 +1,31 @@
+{%extends "main.html" %}
+{% block head %}
+<title>Form</title>
+
+{% endblock %}
+
+{% block form %}
+<div class="sp"></div>
+<div class="container position-absolute top-25 min-vw-100 shadow-md bg-body rounded-2 p-5">
+    
+
+                <div class="col">
+                    <h3 class="w-25 mx-auto"><strong>When should I sleep?</strong></h3>
+                        <form action="#" method="post" class="w-25  mx-auto">
+                            <label for="departing"><strong>Time of Departure</strong></label>
+                            <input class="form-control" type="text" name="departing" placeholder="ex: 7 PM"><br>
+                            <label for="depAir"><strong>Departing Airport Code</strong></label>
+                            <input class="form-control" type="text" name="depAir" placeholder="LGA"><br>
+                            <label for="departing"><strong>Destination Airport Code</strong></label>
+                            <input class="form-control" type="text" name="arvAir" placeholder="CDG"><br>
+                            <label for="flyLen"><strong>Length of Flight</strong></label>
+                            <div class="input-group mb-3">
+                                <input class="form-control" type="text" name="flyLen" placeholder="10">
+                                <span class="input-group-text">hrs</span><br>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                        </form>
+            
+        </div>
+</div>
+{% endblock %}
